@@ -9,6 +9,7 @@ let cartSummeryHTML = '';
 cart.forEach( (cartItem)=>{
     const productId = cartItem.productId;
     console.log(productId);
+    console.log(productId);
     let matchingProduct ;
     console.log(matchingProduct);
     data.forEach((product)=>{
@@ -50,6 +51,47 @@ cartSummeryHTML +=`
 </div>
 
 `
+ let orderSummaryHtml = '';
+function render(){
+    let prodcutPrice = 0;
+    cart.forEach((cartItem)=>{
+        const product = cartItem.quantity;
+        const price = matchingProduct.price;
+        
+        console.log(product);
+        prodcutPrice += matchingProduct.price * cartItem.quantity
+    });
+    console.log(prodcutPrice);
+    orderSummaryHtml +=`
+        <div class="payment-summary">
+     <div class="payment-summary-title">
+       Order Summary
+     </div>
+
+    <div class="payment-summary-row">
+       <div>Items (<span class="Items-total">${cartItem.quantity}</span>):</div>
+          <div class="payment-summary-money">₹ ${prodcutPrice}</div>
+        </div>
+
+    
+
+    <div class="payment-summary-row total-row">
+      <div>Order total:</div>
+      <div class="payment-summary-money">₹ ${prodcutPrice}</div>
+    </div>
+
+    <button class="place-order-button button-primary">
+      Place your order
+    </button>
+  </div>
+    `
+
+}
+
+document.getElementById('payment-final-sum').innerHTML = orderSummaryHtml;
+
+render();
+
 });
 
 
@@ -70,6 +112,9 @@ document.querySelectorAll('.js-delete-link')
   });
   
 });
+
+
+
 
 
 
