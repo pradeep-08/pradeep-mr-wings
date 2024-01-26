@@ -37,12 +37,10 @@ cartSummeryHTML +=`
       </div>
       <div class="product-quantity">
         <span>
-          Quantity: <span class="quantity-label">${cartItem.quantity}</span>
+         <span class="qty">Quantity:</span>  <span class="quantity-label">${cartItem.quantity}</span>
         </span>
+        <button class="delete-quantity-link link-primary js-delete-link" data-product-delete ="${matchingProduct.id}">Remove from the Cart</button>
         
-        <span class="delete-quantity-link link-primary js-delete-link" data-product-delete ="${matchingProduct.id}">
-        Delete
-      </span>
       </div>
     </div>
 
@@ -53,6 +51,9 @@ cartSummeryHTML +=`
 
 `
 });
+
+
+
 document.getElementById('js-cart-order-summary').innerHTML = cartSummeryHTML;
 
 
