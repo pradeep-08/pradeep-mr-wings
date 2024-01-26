@@ -1,7 +1,5 @@
 import { data } from "./data.js";
 import { cart , updatingCart } from "./calculate.js";
-import { popdata } from "./data.js";
-
 
 let prodcutData = '';
 data.forEach((data) => {
@@ -15,7 +13,7 @@ prodcutData += `
  <div class="content">
      
      <h3>${data.name}</h3>
-     <button onclick="showToast()" class="btn add-to-cart-button button-primary js-add-to-cart"  data-product-Id="${popdata.id}">
+     <button onclick="showToast()" class="btn add-to-cart-button button-primary js-add-to-cart"  data-product-Id="${data.id}">
      Add to Cart
  </button>
     

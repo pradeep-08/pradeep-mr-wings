@@ -40,21 +40,4 @@ export const data =[{
     "price" : 150
 }]
 
-export const popdata =[
-    {
-        "id": "e43638ce-6aa0-4b85-b27f-e1d07eb678c232",
-        "image": "Chicken-Burger.jpg",
-        "name": "Fried chicken burger",
-        "price" : 120
-    },{
-        "id": "15b6fc6f-327a-4ec4-896f-486349e85a3d",
-        "image": "img/crispy-leg.jpg",
-        "name": "Crispy Leg (2 pcs)",
-        "price" : 120
-    },{
-        "id": "83d4ca15-0f35-48f5-b7a3-1ea210004f2e",
-        "image": "img/chicken popcorn.jpg",
-        "name": "Chicken Popcorn (150g)",
-        "price" : 120
-    }
-]
+
