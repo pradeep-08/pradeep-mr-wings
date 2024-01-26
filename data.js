@@ -1,6 +1,6 @@
 export const data =[{
     "id": "e43638ce-6aa0-4b85-b27f-e1d07eb678c232",
-    "image": "Chicken-Burger.jpg",
+    "image": "img/Chicken-Burger.jpg",
     "name": "Fried chicken burger",
     "price" : 120
 },{
